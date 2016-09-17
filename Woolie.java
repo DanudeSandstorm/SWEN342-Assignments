@@ -19,7 +19,7 @@ public class Woolie implements Runnable {
 
 		System.out.println(name + " has arrived at the bridge.");
 
-		bridge.enterBridge();
+		bridge.enterBridge(this);
 		cross();
 		bridge.leaveBridge();
 	}

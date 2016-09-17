@@ -1,17 +1,40 @@
 package src;
-import java.util.concurrent.locks.ReentrantLock;
+import java.lang.*;
+import java.util.*;
 
 public class Bridge {
 
-	private final ReentrantLock troll = new ReentrantLock();
+	private int bridgeCount;
+	private Queue<Woolie> queue;
 
-	public Bridge() {}
+	public Bridge() {
+		bridgeCount = 0;
+		queue = new LinkedList<Woolie>();
+	}
 
-	public void enterBridge() {
- 		troll.lock();
+	public void enterBridge(Woolie woolie) {
+		synchronized(woolie) {
+			bridgeCount++;
+
+			if (bridgeCount > 3) {
+				//add to queue
+				queue.add(woolie);
+				//make the woolie wait
+				try { woolie.wait(); }
+				catch(InterruptedException e) {}
+			}
+		}
 	}
 
 	public void leaveBridge() {
-		troll.unlock();
+		bridgeCount--;
+		if (queue.peek() != null) {
+			//Allow next woolie in queue
+			Woolie woolie = queue.remove();
+
+			synchronized (woolie) {
+				woolie.notify();
+			}
+		}
 	}
 }
