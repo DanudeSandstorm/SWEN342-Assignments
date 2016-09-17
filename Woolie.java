@@ -6,18 +6,22 @@ public class Woolie implements Runnable {
 	private String name;
 	private String city;
 	private int speed;
+	private Bridge bridge;
 
-	public Woolie(String name, int speed, String city) {
+	public Woolie(String name, int speed, String city, Bridge bridge) {
 		this.name = name;
 		this.speed = speed;
 		this.city = city;
+		this.bridge = bridge;
 	}
 
 	public void run() {
 
 		System.out.println(name + " has arrived at the bridge.");
 
+		bridge.enterBridge();
 		cross();
+		bridge.leaveBridge();
 	}
 
 	private void cross() {
@@ -37,3 +41,4 @@ public class Woolie implements Runnable {
 	}
 
 }
+
