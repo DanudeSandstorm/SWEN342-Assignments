@@ -1,14 +1,34 @@
 package src;
+import java.lang.*;
+import java.util.*;
 
 public class Fork {
+
+	private boolean isheld;
+
+	public Fork() {
+		isheld = false;
+	}
+
     /*
      * A philosopher (attempts to) acquire the fork.
      */
-    public void acquire() {}
+    public synchronized void acquire() {
+    	while (isheld) {
+    		try {
+    			wait();
+    		}
+    		catch(InterruptedException e) {}
+    	}
+    	isheld = true;
+    }
 
     /*
      * A philosopher releases the fork.
      */
-    public void release() {}
+    public synchronized void release() {
+    	isheld = false;
+		notifyAll();
+    }
 }
 
