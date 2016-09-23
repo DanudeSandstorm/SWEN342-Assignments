@@ -27,28 +27,60 @@ public class Philosopher extends Thread {
 		do {
 			think();
 
+			grabForks();
+
+			eat();
+
 			releaseForks();
 
 			nTimes--;
 		} while (infinite || nTimes > 0);
 	}
 
-
 	private void think() {
+		randomSleep(thinkMillis, "thinks");
+	}
+
+	private void randomSleep(long time, String action) {
 		ThreadLocalRandom random = ThreadLocalRandom.current();
-		long t = random.nextLong(thinkMillis + 1);
-		System.out.println("Philosopher " + id + " thinks for " +
-			t + " milliseconds");
+		long t = random.nextLong(time + 1);
+		System.out.println("Philosopher " + id + " " + action + " for " +
+			t + " milliseconds.");
 		try {
 			Thread.sleep(t);
 		}
 		catch(InterruptedException e) {}
 	}
 
+	private void grabForks() {
+		if (rHanded) {
+			grabFork(right, "right");
+			grabFork(left, "left");
+		}
+		else {
+			grabFork(left, "left");
+			grabFork(right, "right");
+		}
+	}
+
+	private void grabFork(Fork fork, String side) {
+		System.out.println("Philosopher " + id + " goes for " + side + " fork.");
+
+		fork.acquire();
+
+		System.out.println("Philosopher " + id + " has " + side + " fork.");
+
+		Thread.yield();	
+	}
+
+	private void eat() {
+		randomSleep(eatMillis, "eats");
+	}
+
 	private void releaseForks() {
 		right.release();
-		System.out.println("Philosopher " + id + "releases right fork");
+		System.out.println("Philosopher " + id + " releases right fork.");
 		left.release();
-		System.out.println("Philosopher " + id + "releases left fork");
+		System.out.println("Philosopher " + id + " releases left fork.");
 	}
 }
