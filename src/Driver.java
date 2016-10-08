@@ -1,11 +1,14 @@
 package src;
 
+import java.util.ArrayList;
+import java.lang.*;
+
 public class Driver {
 
 	final private static int 
-		nResources = 0, 
+		nResources = 0, //banker's resources
 		nClient = 0, 
-		nUnits = 0,
+		nUnits = 0, //number of resources
 		nRequests = 0;
 
 	final private static long
@@ -14,11 +17,21 @@ public class Driver {
 
 	public static void main(String args[]) {
 		Banker banker = new Banker(nResources);
+		ArrayList<Client> clients = new ArrayList<Client>(); 
 
 		for (int i = 0; i <= nClient; i++) {
-			(new Client(Integer.toString(i), banker, nUnits, nRequests,
+			clients.add(
+				new Client(Integer.toString(i), banker, nUnits, nRequests,
 				minSleepMillis, maxSleepMillis)
-			).start();
+			);
+			clients.get(i).start();
 		}
+
+		try { 
+			for (int i = 0; i <= clients.size(); i++) {
+				clients.get(i).join();
+			}
+
+		} catch (InterruptedException e) {}
 	}
 }
