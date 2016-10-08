@@ -6,14 +6,14 @@ import java.lang.*;
 public class Driver {
 
 	final private static int 
-		nResources = 0, //banker's resources
-		nClient = 0, 
-		nUnits = 0, //number of resources
-		nRequests = 0;
+		nResources = 5, //banker's resources
+		nClient = 3, 
+		nUnits = 4, //number of resources
+		nRequests = 2;
 
 	final private static long
-		minSleepMillis = 0,
-		maxSleepMillis = 0;
+		minSleepMillis = 1000,
+		maxSleepMillis = 2000;
 
 	public static void main(String args[]) {
 		Banker banker = new Banker(nResources);

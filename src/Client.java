@@ -22,17 +22,26 @@ public class Client extends Thread {
 	public void run() {
 		ThreadLocalRandom random = ThreadLocalRandom.current();
 
+		// Register a claim for up to nUnits
+		nUnits = random.nextInt (1, nUnits + 1);
+
+		//Set claim
+		banker.setClaim(nUnits);
+
 		while (nRequests > 0) {
 			nRequests--;
 
-			//request some (more) units between 1 and
-			//the remaining needed units
-			banker.request(
-				random.nextInt(1, (nUnits - banker.allocated()) + 1)
-			);
-
+			// If the banker.remaining() == 0, then the client will release 
+			// all of its units, else the client will request some units.
 			if (banker.remaining() == 0) {
 				banker.release(banker.allocated());
+			}
+			else if (nUnits - banker.allocated() >= 1) {
+				//request some (more) units between 1 and
+				//the remaining needed units
+				banker.request(
+					random.nextInt((nUnits - banker.allocated()) + 1) + 1
+				);
 			}
 
 			try {
