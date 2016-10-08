@@ -4,7 +4,13 @@ import java.util.ArrayList;
 public class Driver {
 
 	public static void main(String args[]) {
-		Arraylist<long> values = new Arraylist<long>();
+		//Secret game mode
+		if (args.length > 0 && args[0].equals("-f")) {
+			System.out.println("Fight mode!");
+			System.out.println("Socrates punches Plato");
+			return;
+		}
+		ArrayList<Long> values = new ArrayList<Long>();
 		ArrayList<Fork> forks = new ArrayList<Fork>();
 		int np, nTimes;
 		long thinkMillis, eatMillis;
@@ -13,7 +19,7 @@ public class Driver {
 		//Parse command line arguments
 		for (int i = 0; i < args.length; i++) {
 			//If the left flag is provided, toggle
-			if (args[i] == "-l") {
+			if (args[i].equals("-l")) {
 				toggleLeft = true;
 				continue;
 			}
@@ -26,8 +32,8 @@ public class Driver {
 
 		//If the command argument was given,
 		//get its value; else set as default
-		np = (values.size() > 1) ? (int) values.get(0) : 4;
-		nTimes = (values.size() > 2) ? (int) values.get(1) : 10;
+		np = (values.size() > 1) ? values.get(0).intValue() : 4;
+		nTimes = (values.size() > 2) ? values.get(1).intValue() : 10;
 		thinkMillis = (values.size() > 3) ? values.get(2) : 0;
 		eatMillis = (values.size() > 4) ? values.get(3) : 0;
 
@@ -37,11 +43,11 @@ public class Driver {
 		}
 
 		//Generate Philosophers
-		for (int i = 1; i <= np; i++) {
+		for (int i = 0; i < np; i++) {
 			boolean rHanded = true;
 			if (toggleLeft && i % 2 != 0) rHanded = false;
 
-			(new Philosopher(i, forks.get((np + i - 1) % np), forks.get(i), 
+			(new Philosopher(i+1, forks.get((np + i - 1) % np), forks.get(i), 
 								rHanded, nTimes, thinkMillis, eatMillis)
 			).start();
 		}
