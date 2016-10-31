@@ -3,6 +3,7 @@ package src;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.concurrent.*;
 
 public class CGrep {
@@ -17,45 +18,62 @@ public class CGrep {
         final ExecutorCompletionService<Found> completionService =
                 new ExecutorCompletionService<>(pool);
 
-        //Use standard input
+        // If no files given, use standard input
         if (args.length == 1) {
-            try {
-                Task task = standardInput();
-                completionService.submit(task);
-            }
-            catch (IOException e) {}
+            completionService.submit(standardInput());
         }
         else {
             //create a "callable" task for each file
-            //starts at index 2
+            //starts at index 2 of the args array
             for (int i = 2; i <= args.length; i++) {
-                //Some for loop
-                Task task = new Task();
+                Task task = new Task(args[i]);
                 completionService.submit(task);
             }
         }
 
+        //Gets all Found promises (future objects)
         for (int i = 1; i <= args.length; i++) {
             try {
                 final Future<Found> future = completionService.take();
-                try {
-                    final Found found = future.get();
-                } catch (ExecutionException e) {}
-            } catch (InterruptedException e) {}
+                print(future);
+            } catch (InterruptedException e) {
+                System.out.println(e.getMessage());
+            } catch (ExecutionException e) {
+                System.out.println(e.getMessage());
+            }
         }
 	}
 
-	private static Task standardInput() throws IOException {
-        InputStreamReader isr = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(isr);
+	private static void print(Future<Found> future)
+            throws ExecutionException, InterruptedException {
 
-        String s;
-        while ((s = br.readLine()) != null) {
+        final Found found = future.get();
+        System.out.println("Matches for: " + found.getName());
+        ArrayList<String> matches = found.getMatches();
+        for (int i = 0; i < matches.size(); i++) {
             //TODO
         }
-        isr.close();
+    }
 
-        return new Task();
+	private static Task standardInput() {
+        return new Task() {
+            @Override
+            public Found call() {
+                InputStreamReader isr = new InputStreamReader(System.in);
+                BufferedReader br = new BufferedReader(isr);
+                Found found = new Found("Standard Input");
+
+                String s;
+                try {
+                    while ((s = br.readLine()) != null) {
+                        //TODO
+                    }
+                    isr.close();
+                } catch (IOException e) {}
+
+                return found;
+            }
+        };
     }
 
 }

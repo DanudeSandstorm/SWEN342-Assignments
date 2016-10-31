@@ -9,7 +9,6 @@ public class Found {
     protected ArrayList<String> matches;
 
     public Found(String fileName) {
-
         this.fileName = fileName;
         matches = new ArrayList<String>();
     }
