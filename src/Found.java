@@ -1,7 +1,6 @@
 package src;
 
 import java.util.ArrayList;
-import java.util.regex.Pattern;
 
 public class Found {
 
@@ -10,13 +9,13 @@ public class Found {
 
     public Found(String fileName) {
         this.fileName = fileName;
-        matches = new ArrayList<String>();
+        matches = new ArrayList<>();
     }
 
     // Each string in the list consists of the line number,
     // a space, and the text of the line itself.
     public void addMatch(int position, String line) {
-
+        matches.add(position + " " + line);
     }
 
     public String getName() {
