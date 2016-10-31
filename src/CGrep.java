@@ -22,6 +22,7 @@ public class CGrep {
                 new ExecutorCompletionService<>(pool);
         final String pattern = args[0]; //First argument
 
+
         // If no files given, use standard input
         if (args.length == 1) {
             completionService.submit( standardInput(pattern) );
@@ -30,14 +31,13 @@ public class CGrep {
             //create a "callable" task for each file
             //starts at index 1; second argument of the args array
             for (int i = 1; i < args.length; i++) {
-                Task task = new Task(pattern, args[i]);
-                completionService.submit(task);
+                completionService.submit( new Task(pattern, args[i]) );
             }
         }
 
         // Gets all Found promises (future objects)
         // Prints the found object
-        for (int i = 1; i <= args.length; i++) {
+        for (int i = 1; i < args.length; i++) {
             try {
                 Found found = completionService.take().get();
                 if (found != null) {
@@ -48,7 +48,9 @@ public class CGrep {
             }
         }
 
-        //TODO main doesn't terminate
+        System.out.println("Finished");
+        pool.shutdown();
+
 	}
 
     /**
