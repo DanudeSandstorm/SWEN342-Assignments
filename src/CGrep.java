@@ -39,24 +39,30 @@ public class CGrep {
         // Prints the found object
         for (int i = 1; i <= args.length; i++) {
             try {
-                final Future<Found> future = completionService.take();
-                print(future);
+                Found found = completionService.take().get();
+                if (found != null) {
+                    print(found);
+                }
             } catch (InterruptedException | ExecutionException e) {
                 System.out.println(e.getMessage());
             }
         }
+
+        //TODO main doesn't terminate
 	}
 
     /**
      * Prints the matches from a future found object
-     * @param future The future object to get and print
+     * Else prints that no matches were found
+     * @param found The found object to print
      */
-	private static void print(Future<Found> future)
-            throws ExecutionException, InterruptedException {
-
-        final Found found = future.get();
-        System.out.println("Matches for: " + found.getName());
+	private static void print(Found found) {
         ArrayList<String> matches = found.getMatches();
+        if (matches.size() == 0 ) {
+            System.out.println("No matches for " + found.getName());
+            return;
+        }
+        System.out.println("Matches for: " + found.getName());
         for (String match : matches) {
             System.out.println(match);
         }
