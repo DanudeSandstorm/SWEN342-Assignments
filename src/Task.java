@@ -53,6 +53,7 @@ class Task implements Callable<Found> {
             }
             lineNumber++;
         }
+        reader.close();
 
         return found;
     }

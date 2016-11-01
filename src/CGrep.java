@@ -21,13 +21,14 @@ public class CGrep {
         final ExecutorCompletionService<Found> completionService =
                 new ExecutorCompletionService<>(pool);
         final String pattern = args[0]; //First argument
-
+        int length = args.length;
 
         // If no files given, use standard input
-        if (args.length == 1) {
+        if (length == 1) {
             completionService.submit( standardInput(pattern) );
         }
         else {
+            length--; //Don't count the pattern
             //create a "callable" task for each file
             //starts at index 1; second argument of the args array
             for (int i = 1; i < args.length; i++) {
@@ -37,7 +38,7 @@ public class CGrep {
 
         // Gets all Found promises (future objects)
         // Prints the found object
-        for (int i = 1; i < args.length; i++) {
+        for (int i = 1; i <= length; i++) {
             try {
                 Found found = completionService.take().get();
                 if (found != null) {
@@ -75,37 +76,21 @@ public class CGrep {
      * @return Returns a task
      */
 	private static Task standardInput(String pattern) {
-        return new Task(pattern, "Standard Input") {
-            @Override
-            public Found call() {
-    	        InputStreamReader isr = new InputStreamReader(System.in);
-        	    BufferedReader br = new BufferedReader(isr);
-                Found found;
-                try {
-                        found = read(br);
-                        isr.close();
-                    } catch (IOException e) {
-                        found = Found.error("Standard Input");
-                    }
-                return found;
-        	}
-	    };
-
-//         return new Task(pattern, "Standard Input") {
-//             @Override
-//             public Found call() {
-//                 InputStreamReader isr = new InputStreamReader(System.in);
-//                 BufferedReader br = new BufferedReader(isr);
-//                 Found found;
-//                 try {
-//                     found = read(br);
-//                     isr.close();
-//                 } catch (IOException e) {
-//                     found = Found.error("Standard Input");
-//                 }
-//                 return found;
-//             }
-//         };
+         return new Task(pattern, "Standard Input") {
+             @Override
+             public Found call() {
+                 InputStreamReader isr = new InputStreamReader(System.in);
+                 BufferedReader br = new BufferedReader(isr);
+                 Found found;
+                 try {
+                     found = read(br);
+                     isr.close();
+                 } catch (IOException e) {
+                     found = Found.error("Standard Input");
+                 }
+                 return found;
+             }
+         };
     }
 
 }
