@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Found {
 
-    protected String fileName;
-    protected ArrayList<String> matches;
+    private String fileName;
+    private ArrayList<String> matches;
 
     public Found(String fileName) {
         this.fileName = fileName;
