@@ -25,13 +25,14 @@ class Task implements Callable<Found> {
             try {
                 found = read(br);
             } catch (IOException e ) {
-                found = new Found("Error");
+                System.err.format(
+                        "Exception occurred trying to read '%s'.",
+                        fileName);
+                found = Found.error(fileName);
             }
         } catch (FileNotFoundException e) {
-            System.err.format(
-                    "Exception occurred trying to read '%s'.",
-                    fileName);
-            found = new Found("Error");
+            System.err.format("'%s' is not a valid file.", fileName);
+            found = Found.error(fileName);
         }
         return found;
     }

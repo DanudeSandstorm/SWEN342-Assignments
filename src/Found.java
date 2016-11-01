@@ -12,6 +12,12 @@ public class Found {
         matches = new ArrayList<>();
     }
 
+    public static Found error(String fileName) {
+        Found found = new Found(fileName);
+        found.addMatch(-1, "Encountered an error");
+        return found;
+    }
+
     // Each string in the list consists of the line number,
     // a space, and the text of the line itself.
     public void addMatch(int position, String line) {

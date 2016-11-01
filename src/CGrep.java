@@ -75,28 +75,37 @@ public class CGrep {
      * @return Returns a task
      */
 	private static Task standardInput(String pattern) {
-		return new Task(pattern, "Error") {
-			@Override
-			public Found call() {
-				System.err.println("\nstandard input isn't working");
-				return new Found("Error");
-			}
-		};
-        // return new Task(pattern, "Standard Input") {
-        //     @Override
-        //     public Found call() {
-        //         InputStreamReader isr = new InputStreamReader(System.in);
-        //         BufferedReader br = new BufferedReader(isr);
-        //         Found found;
-        //         try {
-        //             found = read(br);
-        //             isr.close();
-        //         } catch (IOException e) {
-        //             found = new Found("Error");
-        //         }
-        //         return found;
-        //     }
-        // };
+        return new Task(pattern, "Standard Input") {
+            @Override
+            public Found call() {
+    	        InputStreamReader isr = new InputStreamReader(System.in);
+        	    BufferedReader br = new BufferedReader(isr);
+                Found found;
+                try {
+                        found = read(br);
+                        isr.close();
+                    } catch (IOException e) {
+                        found = Found.error("Standard Input");
+                    }
+                return found;
+        	}
+	    };
+
+//         return new Task(pattern, "Standard Input") {
+//             @Override
+//             public Found call() {
+//                 InputStreamReader isr = new InputStreamReader(System.in);
+//                 BufferedReader br = new BufferedReader(isr);
+//                 Found found;
+//                 try {
+//                     found = read(br);
+//                     isr.close();
+//                 } catch (IOException e) {
+//                     found = Found.error("Standard Input");
+//                 }
+//                 return found;
+//             }
+//         };
     }
 
 }
