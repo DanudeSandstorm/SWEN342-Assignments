@@ -48,7 +48,6 @@ public class CGrep {
             }
         }
 
-        System.out.println("Finished");
         pool.shutdown();
 
 	}

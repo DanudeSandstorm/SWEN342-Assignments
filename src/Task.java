@@ -4,15 +4,16 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.concurrent.Callable;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Task implements Callable<Found> {
+class Task implements Callable<Found> {
 
     private String fileName;
-    private String pattern;
+    private Pattern pattern;
 
-    public Task(String pattern, String fileName) {
-        this.pattern = pattern;
+    Task(String pattern, String fileName) {
+        this.pattern = Pattern.compile(pattern);
         this.fileName = fileName;
     }
 
@@ -57,12 +58,14 @@ public class Task implements Callable<Found> {
 
     /**
      * checks a line for matches against the pattern
-     * @param line a string
+     * @param line a string to check for matches against pattern
      * @return true if a match is found, else false
      */
     private boolean checkMatch(String line) {
-        //TODO
-        return false;
+        Matcher m = pattern.matcher(line);
+        boolean b = m.find();
+        //  return pattern.matcher(line).matches();
+        return b;
     }
 
 }
