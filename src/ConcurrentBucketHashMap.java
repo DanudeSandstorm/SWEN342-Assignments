@@ -1,27 +1,11 @@
 package src;
 
-import java.util.* ;
+import java.util.*;
 import java.util.concurrent.* ;
 import java.util.concurrent.locks.* ;
 
-/*
- * A SynchronizedBucketHashMap implements a subset of the Map interface.
- * It would be relatively easy (but tedious) to add the
- * missing methods to bring this into conformance with the
- * Map interface.
- *
- * The idea is that a key/value Pair objects are placed in one
- * of N Buckets based on the hashcode of the key mod N. The
- * Buckets are contained in an array, and hashcode based selector
- * is the index into the array of the appropriate Bucket.
- *
- * In this version, all synchronization is done using built-in
- * Java synchronized blocks. This is inefficient, as it does not
- * support concurrent reading, and does not allow a consistent
- * compoutation of the size.
- */
-
-public class SynchronizedBucketHashMap<K, V> {
+@SuppressWarnings("ALL")
+public class ConcurrentBucketHashMap<K, V> {
     final int numberOfBuckets ;
     final List<Bucket<K, V>> buckets ;
 
@@ -52,6 +36,7 @@ public class SynchronizedBucketHashMap<K, V> {
     class Bucket<K, V> {
         private final List<Pair<K, V>> contents =
                 new ArrayList<Pair<K, V>>() ;
+        private ReadWriteLock rwl = new ReentrantReadWriteLock();
 
         /*
          * Return the current Bucket size.
@@ -87,12 +72,29 @@ public class SynchronizedBucketHashMap<K, V> {
         void removePair(int index) {
             contents.remove(index) ;
         }
+
+        /* Locks and unlocks */
+        void readLock() {
+            rwl.readLock().lock();
+        }
+
+        void readUnlock() {
+            rwl.readLock().unlock();
+        }
+
+        void writeLock() {
+            rwl.writeLock().lock();
+        }
+
+        void writeUnlock() {
+            rwl.writeLock().unlock();
+        }
     }
 
     /*
-     * Constructor for the SynchronizedBucketHashMap proper.
+     * Constructor for the ConcurrentBucketHashMap proper.
      */
-    public SynchronizedBucketHashMap(int nbuckets) {
+    public ConcurrentBucketHashMap(int nbuckets) {
         numberOfBuckets = nbuckets ;
         buckets = new ArrayList<Bucket<K, V>>(nbuckets) ;
 
