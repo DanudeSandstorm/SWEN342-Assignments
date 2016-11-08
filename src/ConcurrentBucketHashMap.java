@@ -36,6 +36,7 @@ public class ConcurrentBucketHashMap<K, V> {
     class Bucket<K, V> {
         private final List<Pair<K, V>> contents =
                 new ArrayList<Pair<K, V>>() ;
+        //Fairness is false by default
         private ReadWriteLock rwl = new ReentrantReadWriteLock();
 
         /*
@@ -111,8 +112,11 @@ public class ConcurrentBucketHashMap<K, V> {
         Bucket<K, V> theBucket = buckets.get(bucketIndex(key)) ;
         boolean      contains ;
 
-        synchronized( theBucket ) {
+        theBucket.readLock();
+        try {
             contains = findPairByKey(key, theBucket) >= 0 ;
+        } finally {
+            theBucket.readUnlock();
         }
 
         return contains ;
@@ -123,7 +127,7 @@ public class ConcurrentBucketHashMap<K, V> {
      */
     public int size() {
         int size = 0 ;
-
+        //TODO
         for ( int i = 0 ; i < numberOfBuckets ; i++ ) {
             Bucket<K, V> theBucket =  buckets.get(i) ;
             synchronized( theBucket ) {
@@ -141,12 +145,16 @@ public class ConcurrentBucketHashMap<K, V> {
         Bucket<K, V> theBucket = buckets.get(bucketIndex(key)) ;
         Pair<K, V>   pair      = null ;
 
-        synchronized(theBucket) {
+
+        theBucket.readLock();
+        try {
             int index = findPairByKey(key, theBucket) ;
 
             if ( index >= 0 ) {
                 pair = theBucket.getPair(index) ;
             }
+        } finally {
+            theBucket.readUnlock();
         }
 
         return (pair == null) ? null : pair.value ;
@@ -162,7 +170,8 @@ public class ConcurrentBucketHashMap<K, V> {
         Pair<K, V>   newPair   = new Pair<K, V>(key, value) ;
         V            oldValue ;
 
-        synchronized(theBucket) {
+        theBucket.writeLock();
+        try {
             int index = findPairByKey(key, theBucket) ;
 
             if ( index >= 0 ) {
@@ -174,6 +183,8 @@ public class ConcurrentBucketHashMap<K, V> {
                 theBucket.addPair(newPair) ;
                 oldValue = null ;
             }
+        } finally {
+            theBucket.writeUnlock();
         }
         return oldValue ;
     }
@@ -187,7 +198,8 @@ public class ConcurrentBucketHashMap<K, V> {
         Bucket<K, V> theBucket = buckets.get(bucketIndex(key)) ;
         V removedValue = null ;
 
-        synchronized(theBucket) {
+        theBucket.writeLock();
+        try {
             int index = findPairByKey(key, theBucket) ;
 
             if ( index >= 0 ) {
@@ -196,6 +208,8 @@ public class ConcurrentBucketHashMap<K, V> {
                 theBucket.removePair(index) ;
                 removedValue = pair.value ;
             }
+        } finally {
+            theBucket.writeUnlock();
         }
         return removedValue ;
     }
