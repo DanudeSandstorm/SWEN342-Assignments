@@ -127,11 +127,20 @@ public class ConcurrentBucketHashMap<K, V> {
      */
     public int size() {
         int size = 0 ;
-        //TODO
+
+        //Acquire all read locks first
         for ( int i = 0 ; i < numberOfBuckets ; i++ ) {
             Bucket<K, V> theBucket =  buckets.get(i) ;
-            synchronized( theBucket ) {
+            theBucket.readLock();
+        }
+        for ( int i = 0 ; i < numberOfBuckets ; i++ ) {
+            Bucket<K, V> theBucket =  buckets.get(i) ;
+            try {
                 size += theBucket.size() ;
+            } finally {
+                // as each bucket's size is accumulated,
+                // release that bucket's lock.
+                theBucket.readUnlock();
             }
         }
         return size ;
