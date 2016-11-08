@@ -74,19 +74,30 @@ public class ConcurrentBucketHashMap<K, V> {
             contents.remove(index) ;
         }
 
-        /* Locks and unlocks */
+        /*
+         * Aquire a read lock on the bucket
+         */
         void readLock() {
             rwl.readLock().lock();
         }
 
+        /*
+         * Release read lock on the bucket
+         */
         void readUnlock() {
             rwl.readLock().unlock();
         }
 
+        /*
+         * Aquire a write lock on the bucket
+         */
         void writeLock() {
             rwl.writeLock().lock();
         }
 
+        /*
+         * Release write lock on the bucket
+         */
         void writeUnlock() {
             rwl.writeLock().unlock();
         }
@@ -153,8 +164,7 @@ public class ConcurrentBucketHashMap<K, V> {
     public V get(K key) {
         Bucket<K, V> theBucket = buckets.get(bucketIndex(key)) ;
         Pair<K, V>   pair      = null ;
-
-
+        
         theBucket.readLock();
         try {
             int index = findPairByKey(key, theBucket) ;
