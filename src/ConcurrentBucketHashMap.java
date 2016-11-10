@@ -162,19 +162,9 @@ public class ConcurrentBucketHashMap<K, V> {
      * Returns null if the key is unmapped.
      */
     public V get(K key) {
-<<<<<<< HEAD
-        Bucket<K, V> theBucket = buckets.get(bucketIndex(key));
-        Pair<K, V> pair = null;
-
-=======
         Bucket<K, V> theBucket = buckets.get(bucketIndex(key)) ;
         Pair<K, V>   pair      = null ;
         
-<<<<<<< HEAD
-        System.out.println("Aquiring read lock for Get");
->>>>>>> 7bdb497... added prints
-=======
->>>>>>> a7a152d... removed prints
         theBucket.readLock();
         try {
             int index = findPairByKey(key, theBucket);
@@ -185,17 +175,8 @@ public class ConcurrentBucketHashMap<K, V> {
         } finally {
             theBucket.readUnlock();
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-        return (pair == null) ? null : pair.value;
-=======
-        System.out.println("Got values of get");
-=======
-
->>>>>>> a7a152d... removed prints
         return (pair == null) ? null : pair.value ;
->>>>>>> 7bdb497... added prints
     }
 
     /*
@@ -224,15 +205,8 @@ public class ConcurrentBucketHashMap<K, V> {
         } finally {
             theBucket.writeUnlock();
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         return oldValue;
-=======
-        System.out.println("Got old value");
-=======
->>>>>>> a7a152d... removed prints
-        return oldValue ;
->>>>>>> 7bdb497... added prints
     }
 
     /*
@@ -257,15 +231,8 @@ public class ConcurrentBucketHashMap<K, V> {
         } finally {
             theBucket.writeUnlock();
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
+        
         return removedValue;
-=======
-        System.out.println("Removed key");
-=======
->>>>>>> a7a152d... removed prints
-        return removedValue ;
->>>>>>> 7bdb497... added prints
     }
 
     /****** PRIVATE METHODS ******/
