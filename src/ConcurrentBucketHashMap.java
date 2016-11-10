@@ -170,8 +170,11 @@ public class ConcurrentBucketHashMap<K, V> {
         Bucket<K, V> theBucket = buckets.get(bucketIndex(key)) ;
         Pair<K, V>   pair      = null ;
         
+<<<<<<< HEAD
         System.out.println("Aquiring read lock for Get");
 >>>>>>> 7bdb497... added prints
+=======
+>>>>>>> a7a152d... removed prints
         theBucket.readLock();
         try {
             int index = findPairByKey(key, theBucket);
@@ -183,10 +186,14 @@ public class ConcurrentBucketHashMap<K, V> {
             theBucket.readUnlock();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         return (pair == null) ? null : pair.value;
 =======
         System.out.println("Got values of get");
+=======
+
+>>>>>>> a7a152d... removed prints
         return (pair == null) ? null : pair.value ;
 >>>>>>> 7bdb497... added prints
     }
@@ -201,7 +208,6 @@ public class ConcurrentBucketHashMap<K, V> {
         Pair<K, V> newPair = new Pair<K, V>(key, value);
         V oldValue;
 
-        System.out.println("Aquiring write lock for put");
         theBucket.writeLock();
         try {
             int index = findPairByKey(key, theBucket);
@@ -219,9 +225,12 @@ public class ConcurrentBucketHashMap<K, V> {
             theBucket.writeUnlock();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         return oldValue;
 =======
         System.out.println("Got old value");
+=======
+>>>>>>> a7a152d... removed prints
         return oldValue ;
 >>>>>>> 7bdb497... added prints
     }
@@ -235,7 +244,6 @@ public class ConcurrentBucketHashMap<K, V> {
         Bucket<K, V> theBucket = buckets.get(bucketIndex(key));
         V removedValue = null;
 
-        System.out.println("Aquiring write lock for remove");
         theBucket.writeLock();
         try {
             int index = findPairByKey(key, theBucket);
@@ -250,9 +258,12 @@ public class ConcurrentBucketHashMap<K, V> {
             theBucket.writeUnlock();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         return removedValue;
 =======
         System.out.println("Removed key");
+=======
+>>>>>>> a7a152d... removed prints
         return removedValue ;
 >>>>>>> 7bdb497... added prints
     }
