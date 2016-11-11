@@ -1,6 +1,7 @@
 *.zip
 /bin
 /out
+/lib
 /.idea
 *.iml
 
