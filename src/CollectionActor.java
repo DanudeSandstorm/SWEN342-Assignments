@@ -4,7 +4,8 @@ import akka.actor.Actors;
 import akka.actor.UntypedActor;
 import java.util.List;
 
-public class CollectionActor extends UntypedActor {
+@SuppressWarnings("ALL")
+class CollectionActor extends UntypedActor {
     private int filesScanned;
     private int filesToScan;
 

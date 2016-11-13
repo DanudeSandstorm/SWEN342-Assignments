@@ -1,6 +1,6 @@
 package src;
 
-public class FileCount {
+class FileCount {
 
     private final int count;
 

@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-public class CGrep {
+class CGrep {
     public static void main(String[] args) {
         if (args.length == 0) {
             System.err.println("Not enough arguments");
