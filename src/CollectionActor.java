@@ -17,7 +17,7 @@ class CollectionActor extends UntypedActor {
     @Override
     public void onReceive(Object message) throws Exception {
         if (message instanceof FileCount) {
-            if (filesScanned == 0 && filesToScan == 0) {
+            if (filesToScan != 0) {
                 throw new RuntimeException("File count has already been received");
             }
             setFileCount((FileCount) message);
