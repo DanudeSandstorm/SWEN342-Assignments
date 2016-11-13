@@ -46,11 +46,12 @@ class CollectionActor extends UntypedActor {
         List<String> matches = found.getMatches();
         if (matches.size() == 0 ) {
             System.out.println("No matches for " + found.getName());
-            return;
         }
-        System.out.println("Matches for: " + found.getName());
-        for (String match : matches) {
-            System.out.println(match);
+        else {
+            System.out.println("Matches for: " + found.getName());
+            for (String match : matches) {
+                System.out.println(match);
+            }
         }
 
         filesScanned++;
