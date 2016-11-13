@@ -1,1 +1,1 @@
-Used the included akka-actor-1.2.jar and scala-library.jar when building this project.
+Used the included jars in lib: akka-actor.jar, config.jar, and scala-library.jar when building this project.
