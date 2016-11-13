@@ -1,7 +1,8 @@
 package src;
 
 import akka.actor.ActorRef;
-import akka.actor.Actors;
+import akka.actor.ActorSystem;
+import akka.actor.Props;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,15 +27,16 @@ class CGrep {
             System.exit(1);
         }
 
+        ActorSystem actorSystem = ActorSystem.create();
         // Create and start a CollectionActor
         ActorRef collectionActor =
-                Actors.actorOf(CollectionActor.class).start();
+                actorSystem.actorOf(new Props(CollectionActor.class));
 
         //Standard Input
         if (args.length == 1) {
-            collectionActor.tell(1);
+            collectionActor.tell(new FileCount(1, actorSystem));
 
-            ActorRef scanActor = Actors.actorOf(ScanActor.class).start();
+            ActorRef scanActor = actorSystem.actorOf(new Props(ScanActor.class));
             scanActor.tell(new Configure("-", pattern, collectionActor));
         }
         //List of files
@@ -42,11 +44,10 @@ class CGrep {
             List<String> files = new ArrayList<>(Arrays.asList(args));
             files.remove(0); //Remove regex argument
 
-            FileCount filecount = new FileCount(files.size());
-            collectionActor.tell(filecount);
+            collectionActor.tell(new FileCount(files.size(), actorSystem));
 
             for (String file : files) {
-                ActorRef scanActor = Actors.actorOf(ScanActor.class).start();
+                ActorRef scanActor = actorSystem.actorOf(new Props(ScanActor.class));
                 scanActor.tell(new Configure(file, pattern, collectionActor));
             }
         }

@@ -1,12 +1,13 @@
 package src;
 
-import akka.actor.Actors;
+import akka.actor.ActorSystem;
 import akka.actor.UntypedActor;
 import java.util.List;
 
 class CollectionActor extends UntypedActor {
     private int filesScanned;
     private int filesToScan;
+    private ActorSystem actorSystem;
 
     public CollectionActor() {
         filesScanned = 0;
@@ -33,6 +34,7 @@ class CollectionActor extends UntypedActor {
      */
     private void setFileCount(FileCount message) {
         filesToScan = message.getCount();
+        actorSystem = message.getActorSystem();
     }
 
     /**
@@ -55,10 +57,8 @@ class CollectionActor extends UntypedActor {
 
         filesScanned++;
 
-        // When all the Found messages have been processed, the CollectionActor
-        // shuts down all actors using Actors.registry().shutdown()
         if (filesScanned == filesToScan) {
-            Actors.registry().shutdownAll();
+            actorSystem.shutdown();
         }
     }
 
