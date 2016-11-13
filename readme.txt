@@ -1,0 +1,1 @@
+Used the included akka-actor-1.2.jar and scala-library.jar when building this project.
