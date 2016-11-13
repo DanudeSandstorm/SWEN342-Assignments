@@ -6,6 +6,8 @@ import akka.actor.Actors;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 public class CGrep {
     public static void main(String[] args) {
@@ -13,7 +15,16 @@ public class CGrep {
             System.err.println("Not enough arguments");
             System.exit(1);
         }
-        String pattern = args[0];
+
+        //Create regex pattern from first parameter
+        Pattern pattern = null;
+        try {
+            pattern = Pattern.compile(args[0]);
+        }
+        catch (PatternSyntaxException exception){
+            System.out.println("Invalid regular expression");
+            System.exit(1);
+        }
 
         // Create and start a CollectionActor
         ActorRef collectionActor =
