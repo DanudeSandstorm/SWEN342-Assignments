@@ -1,0 +1,1214 @@
+java Driver 3 4 -l
+
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 3 goes for right fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 3 has right fork.
+Philosopher 1 goes for right fork.
+Philosopher 3 goes for left fork.
+Philosopher 2 goes for left fork.
+Philosopher 3 has left fork.
+Philosopher 1 has right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 1 goes for left fork.
+Philosopher 3 releases right fork.
+Philosopher 1 has left fork.
+Philosopher 3 releases left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 3 goes for right fork.
+Philosopher 2 has left fork.
+Philosopher 1 releases right fork.
+Philosopher 2 goes for right fork.
+Philosopher 3 has right fork.
+Philosopher 2 has right fork.
+Philosopher 1 releases left fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 3 goes for left fork.
+Philosopher 2 releases right fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 releases left fork.
+Philosopher 3 has left fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 2 goes for left fork.
+Philosopher 2 has left fork.
+Philosopher 1 goes for right fork.
+Philosopher 2 goes for right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 3 releases right fork.
+Philosopher 3 releases left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 2 has right fork.
+Philosopher 3 goes for right fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 2 releases right fork.
+Philosopher 3 has right fork.
+Philosopher 2 releases left fork.
+Philosopher 1 has right fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 3 goes for left fork.
+Philosopher 2 goes for left fork.
+Philosopher 1 goes for left fork.
+Philosopher 3 has left fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 3 releases right fork.
+Philosopher 3 releases left fork.
+Philosopher 1 has left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 goes for right fork.
+Philosopher 2 has left fork.
+Philosopher 1 releases right fork.
+Philosopher 2 goes for right fork.
+Philosopher 3 has right fork.
+Philosopher 1 releases left fork.
+Philosopher 3 goes for left fork.
+Philosopher 2 has right fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 1 goes for right fork.
+Philosopher 3 has left fork.
+Philosopher 2 releases right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 2 releases left fork.
+Philosopher 1 has right fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 3 releases right fork.
+Philosopher 2 goes for left fork.
+Philosopher 1 goes for left fork.
+Philosopher 3 releases left fork.
+Philosopher 1 has left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 goes for right fork.
+Philosopher 2 has left fork.
+Philosopher 1 releases right fork.
+Philosopher 2 goes for right fork.
+Philosopher 3 has right fork.
+Philosopher 1 releases left fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 3 goes for left fork.
+Philosopher 2 has right fork.
+Philosopher 1 goes for right fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 3 has left fork.
+Philosopher 2 releases right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 1 has right fork.
+Philosopher 2 releases left fork.
+Philosopher 1 goes for left fork.
+Philosopher 3 releases right fork.
+Philosopher 1 has left fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 releases left fork.
+Philosopher 1 releases right fork.
+Philosopher 2 goes for left fork.
+Philosopher 1 releases left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 has left fork.
+Philosopher 1 goes for right fork.
+Philosopher 3 goes for right fork.
+Philosopher 2 goes for right fork.
+Philosopher 3 has right fork.
+Philosopher 2 has right fork.
+Philosopher 3 goes for left fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 3 has left fork.
+Philosopher 2 releases right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 1 has right fork.
+Philosopher 2 releases left fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 1 goes for left fork.
+Philosopher 3 releases right fork.
+Philosopher 1 has left fork.
+Philosopher 2 goes for left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 releases left fork.
+Philosopher 2 has left fork.
+Philosopher 2 goes for right fork.
+Philosopher 1 releases right fork.
+Philosopher 1 releases left fork.
+Philosopher 2 has right fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 releases right fork.
+Philosopher 2 releases left fork.
+Philosopher 3 goes for right fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 1 goes for right fork.
+Philosopher 2 goes for left fork.
+Philosopher 3 has right fork.
+Philosopher 1 has right fork.
+Philosopher 3 goes for left fork.
+Philosopher 1 goes for left fork.
+Philosopher 3 has left fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 3 releases right fork.
+Philosopher 1 has left fork.
+Philosopher 3 releases left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 2 has left fork.
+Philosopher 1 releases right fork.
+Philosopher 2 goes for right fork.
+Philosopher 3 goes for right fork.
+Philosopher 2 has right fork.
+Philosopher 1 releases left fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 3 has right fork.
+Philosopher 2 releases right fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 releases left fork.
+Philosopher 3 goes for left fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 1 goes for right fork.
+Philosopher 2 goes for left fork.
+Philosopher 3 has left fork.
+Philosopher 1 has right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 1 goes for left fork.
+Philosopher 3 releases right fork.
+Philosopher 1 has left fork.
+Philosopher 3 releases left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 2 has left fork.
+Philosopher 1 releases right fork.
+Philosopher 2 goes for right fork.
+Philosopher 3 goes for right fork.
+Philosopher 2 has right fork.
+Philosopher 1 releases left fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 3 has right fork.
+Philosopher 2 releases right fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 releases left fork.
+Philosopher 3 goes for left fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 1 goes for right fork.
+Philosopher 2 goes for left fork.
+Philosopher 3 has left fork.
+Philosopher 1 has right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 1 goes for left fork.
+Philosopher 3 releases right fork.
+Philosopher 1 has left fork.
+Philosopher 3 releases left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 goes for right fork.
+Philosopher 2 has left fork.
+Philosopher 2 goes for right fork.
+Philosopher 1 releases right fork.
+Philosopher 2 has right fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 1 releases left fork.
+Philosopher 3 has right fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 releases right fork.
+Philosopher 1 goes for right fork.
+Philosopher 3 goes for left fork.
+Philosopher 1 has right fork.
+Philosopher 2 releases left fork.
+Philosopher 1 goes for left fork.
+Philosopher 3 has left fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 2 goes for left fork.
+Philosopher 1 has left fork.
+Philosopher 3 releases right fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 releases left fork.
+Philosopher 2 has left fork.
+Philosopher 1 releases right fork.
+Philosopher 2 goes for right fork.
+Philosopher 1 releases left fork.
+Philosopher 2 has right fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 1 goes for right fork.
+Philosopher 2 releases right fork.
+Philosopher 2 releases left fork.
+Philosopher 1 has right fork.
+Philosopher 1 goes for left fork.
+Philosopher 1 has left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 1 releases right fork.
+Philosopher 1 releases left fork.
+
+java Driver 10 2 0 0
+
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 2 goes for right fork.
+Philosopher 1 goes for right fork.
+Philosopher 1 has right fork.
+Philosopher 2 has right fork.
+Philosopher 2 goes for left fork.
+Philosopher 1 goes for left fork.
+Philosopher 4 thinks for 0 milliseconds.
+Philosopher 6 thinks for 0 milliseconds.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 5 goes for right fork.
+Philosopher 5 has right fork.
+Philosopher 1 goes for right fork.
+Philosopher 1 has right fork.
+Philosopher 6 goes for right fork.
+Philosopher 5 goes for left fork.
+Philosopher 5 has left fork.
+Philosopher 3 goes for right fork.
+Philosopher 3 has right fork.
+Philosopher 1 goes for left fork.
+Philosopher 1 has left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 1 releases right fork.
+Philosopher 1 releases left fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 1 goes for right fork.
+Philosopher 1 has right fork.
+Philosopher 8 thinks for 0 milliseconds.
+Philosopher 4 goes for right fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 6 has right fork.
+Philosopher 2 goes for right fork.
+Philosopher 2 has right fork.
+Philosopher 2 goes for left fork.
+Philosopher 8 goes for right fork.
+Philosopher 8 has right fork.
+Philosopher 8 goes for left fork.
+Philosopher 8 has left fork.
+Philosopher 8 eats for 0 milliseconds.
+Philosopher 8 releases right fork.
+Philosopher 8 releases left fork.
+Philosopher 8 thinks for 0 milliseconds.
+Philosopher 8 goes for right fork.
+Philosopher 8 has right fork.
+Philosopher 8 goes for left fork.
+Philosopher 1 goes for left fork.
+Philosopher 1 has left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 1 releases right fork.
+Philosopher 1 releases left fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 7 thinks for 0 milliseconds.
+Philosopher 3 goes for left fork.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 7 goes for right fork.
+Philosopher 1 goes for right fork.
+Philosopher 10 thinks for 0 milliseconds.
+Philosopher 9 thinks for 0 milliseconds.
+Philosopher 2 has left fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 2 releases right fork.
+Philosopher 2 releases left fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 8 has left fork.
+Philosopher 6 goes for left fork.
+Philosopher 8 eats for 0 milliseconds.
+Philosopher 2 goes for right fork.
+Philosopher 1 has right fork.
+Philosopher 3 has left fork.
+Philosopher 9 goes for right fork.
+Philosopher 10 goes for right fork.
+Philosopher 5 releases right fork.
+Philosopher 10 has right fork.
+Philosopher 9 has right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 1 goes for left fork.
+Philosopher 8 releases right fork.
+Philosopher 6 has left fork.
+Philosopher 7 has right fork.
+Philosopher 8 releases left fork.
+Philosopher 3 releases right fork.
+Philosopher 9 goes for left fork.
+Philosopher 10 goes for left fork.
+Philosopher 5 releases left fork.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 4 has right fork.
+Philosopher 5 goes for right fork.
+Philosopher 9 has left fork.
+Philosopher 2 has right fork.
+Philosopher 3 releases left fork.
+Philosopher 8 thinks for 0 milliseconds.
+Philosopher 7 goes for left fork.
+Philosopher 6 eats for 0 milliseconds.
+Philosopher 8 goes for right fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 2 goes for left fork.
+Philosopher 9 eats for 0 milliseconds.
+Philosopher 4 goes for left fork.
+Philosopher 10 has left fork.
+Philosopher 9 releases right fork.
+Philosopher 3 goes for right fork.
+Philosopher 7 has left fork.
+Philosopher 6 releases right fork.
+Philosopher 7 eats for 0 milliseconds.
+Philosopher 8 has right fork.
+Philosopher 9 releases left fork.
+Philosopher 10 eats for 0 milliseconds.
+Philosopher 4 has left fork.
+Philosopher 1 has left fork.
+Philosopher 10 releases right fork.
+Philosopher 9 thinks for 0 milliseconds.
+Philosopher 8 goes for left fork.
+Philosopher 7 releases right fork.
+Philosopher 5 has right fork.
+Philosopher 6 releases left fork.
+Philosopher 5 goes for left fork.
+Philosopher 7 releases left fork.
+Philosopher 8 has left fork.
+Philosopher 9 goes for right fork.
+Philosopher 10 releases left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 1 releases right fork.
+Philosopher 2 has left fork.
+Philosopher 10 thinks for 0 milliseconds.
+Philosopher 9 has right fork.
+Philosopher 8 eats for 0 milliseconds.
+Philosopher 7 thinks for 0 milliseconds.
+Philosopher 6 thinks for 0 milliseconds.
+Philosopher 7 goes for right fork.
+Philosopher 8 releases right fork.
+Philosopher 9 goes for left fork.
+Philosopher 10 goes for right fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 1 releases left fork.
+Philosopher 4 releases right fork.
+Philosopher 5 has left fork.
+Philosopher 4 releases left fork.
+Philosopher 3 has right fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 releases right fork.
+Philosopher 10 has right fork.
+Philosopher 9 has left fork.
+Philosopher 7 has right fork.
+Philosopher 8 releases left fork.
+Philosopher 6 goes for right fork.
+Philosopher 8 thinks for 0 milliseconds.
+Philosopher 7 goes for left fork.
+Philosopher 9 eats for 0 milliseconds.
+Philosopher 10 goes for left fork.
+Philosopher 2 releases left fork.
+Philosopher 1 goes for right fork.
+Philosopher 3 goes for left fork.
+Philosopher 4 thinks for 0 milliseconds.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 4 goes for right fork.
+Philosopher 3 has left fork.
+Philosopher 1 has right fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 10 has left fork.
+Philosopher 9 releases right fork.
+Philosopher 8 goes for right fork.
+Philosopher 6 has right fork.
+Philosopher 8 has right fork.
+Philosopher 9 releases left fork.
+Philosopher 10 eats for 0 milliseconds.
+Philosopher 2 goes for right fork.
+Philosopher 1 goes for left fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 5 releases right fork.
+Philosopher 3 releases right fork.
+Philosopher 1 has left fork.
+Philosopher 10 releases right fork.
+Philosopher 9 thinks for 0 milliseconds.
+Philosopher 8 goes for left fork.
+Philosopher 6 goes for left fork.
+Philosopher 9 goes for right fork.
+Philosopher 10 releases left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 releases left fork.
+Philosopher 2 has right fork.
+Philosopher 4 has right fork.
+Philosopher 5 releases left fork.
+Philosopher 4 goes for left fork.
+Philosopher 2 goes for left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 1 releases right fork.
+Philosopher 10 thinks for 0 milliseconds.
+Philosopher 9 has right fork.
+Philosopher 6 has left fork.
+Philosopher 9 goes for left fork.
+Philosopher 10 goes for right fork.
+Philosopher 1 releases left fork.
+Philosopher 3 goes for right fork.
+Philosopher 2 has left fork.
+Philosopher 4 has left fork.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 10 has right fork.
+Philosopher 6 eats for 0 milliseconds.
+Philosopher 10 goes for left fork.
+Philosopher 1 goes for right fork.
+Philosopher 2 releases right fork.
+Philosopher 4 releases right fork.
+Philosopher 5 goes for right fork.
+Philosopher 4 releases left fork.
+Philosopher 3 has right fork.
+Philosopher 3 goes for left fork.
+Philosopher 1 has right fork.
+Philosopher 2 releases left fork.
+Philosopher 7 has left fork.
+Philosopher 6 releases right fork.
+Philosopher 7 eats for 0 milliseconds.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 1 goes for left fork.
+Philosopher 3 has left fork.
+Philosopher 4 thinks for 0 milliseconds.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 2 goes for right fork.
+Philosopher 8 has left fork.
+Philosopher 7 releases right fork.
+Philosopher 5 has right fork.
+Philosopher 6 releases left fork.
+Philosopher 5 goes for left fork.
+Philosopher 7 releases left fork.
+Philosopher 8 eats for 0 milliseconds.
+Philosopher 3 releases right fork.
+Philosopher 4 goes for right fork.
+Philosopher 3 releases left fork.
+Philosopher 2 has right fork.
+Philosopher 9 has left fork.
+Philosopher 8 releases right fork.
+Philosopher 7 thinks for 0 milliseconds.
+Philosopher 5 has left fork.
+Philosopher 6 thinks for 0 milliseconds.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 7 goes for right fork.
+Philosopher 8 releases left fork.
+Philosopher 9 eats for 0 milliseconds.
+Philosopher 2 goes for left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 10 has left fork.
+Philosopher 9 releases right fork.
+Philosopher 8 thinks for 0 milliseconds.
+Philosopher 7 has right fork.
+Philosopher 7 goes for left fork.
+Philosopher 5 releases right fork.
+Philosopher 6 goes for right fork.
+Philosopher 4 has right fork.
+Philosopher 5 releases left fork.
+Philosopher 7 has left fork.
+Philosopher 8 goes for right fork.
+Philosopher 9 releases left fork.
+Philosopher 10 eats for 0 milliseconds.
+Philosopher 3 goes for right fork.
+Philosopher 1 has left fork.
+Philosopher 10 releases right fork.
+Philosopher 9 thinks for 0 milliseconds.
+Philosopher 8 has right fork.
+Philosopher 7 eats for 0 milliseconds.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 4 goes for left fork.
+Philosopher 5 goes for right fork.
+Philosopher 7 releases right fork.
+Philosopher 8 goes for left fork.
+Philosopher 8 has left fork.
+Philosopher 9 goes for right fork.
+Philosopher 9 has right fork.
+Philosopher 10 releases left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 has right fork.
+Philosopher 2 has left fork.
+Philosopher 1 releases right fork.
+Philosopher 10 thinks for 0 milliseconds.
+Philosopher 9 goes for left fork.
+Philosopher 8 eats for 0 milliseconds.
+Philosopher 6 has right fork.
+Philosopher 7 releases left fork.
+Philosopher 5 has right fork.
+Philosopher 7 thinks for 0 milliseconds.
+Philosopher 6 goes for left fork.
+Philosopher 9 has left fork.
+Philosopher 8 releases right fork.
+Philosopher 10 goes for right fork.
+Philosopher 1 releases left fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 2 releases right fork.
+Philosopher 3 goes for left fork.
+Philosopher 2 releases left fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 10 has right fork.
+Philosopher 10 goes for left fork.
+Philosopher 8 releases left fork.
+Philosopher 9 eats for 0 milliseconds.
+Philosopher 7 goes for right fork.
+Philosopher 5 goes for left fork.
+Philosopher 7 has right fork.
+Philosopher 9 releases right fork.
+Philosopher 10 has left fork.
+Philosopher 8 thinks for 0 milliseconds.
+Philosopher 1 goes for right fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 3 has left fork.
+Philosopher 2 goes for right fork.
+Philosopher 1 has right fork.
+Philosopher 8 goes for right fork.
+Philosopher 10 eats for 0 milliseconds.
+Philosopher 9 releases left fork.
+Philosopher 7 goes for left fork.
+Philosopher 9 thinks for 0 milliseconds.
+Philosopher 10 releases right fork.
+Philosopher 8 has right fork.
+Philosopher 1 goes for left fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 1 has left fork.
+Philosopher 8 goes for left fork.
+Philosopher 10 releases left fork.
+Philosopher 9 goes for right fork.
+Philosopher 10 thinks for 0 milliseconds.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 4 has left fork.
+Philosopher 3 releases right fork.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 1 releases right fork.
+Philosopher 10 goes for right fork.
+Philosopher 9 has right fork.
+Philosopher 10 has right fork.
+Philosopher 1 releases left fork.
+Philosopher 5 has left fork.
+Philosopher 4 releases right fork.
+Philosopher 2 has right fork.
+Philosopher 3 releases left fork.
+Philosopher 2 goes for left fork.
+Philosopher 4 releases left fork.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 10 goes for left fork.
+Philosopher 9 goes for left fork.
+Philosopher 1 goes for right fork.
+Philosopher 6 has left fork.
+Philosopher 5 releases right fork.
+Philosopher 4 thinks for 0 milliseconds.
+Philosopher 2 has left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 4 goes for right fork.
+Philosopher 5 releases left fork.
+Philosopher 6 eats for 0 milliseconds.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 4 has right fork.
+Philosopher 2 releases right fork.
+Philosopher 3 goes for right fork.
+Philosopher 1 has right fork.
+Philosopher 2 releases left fork.
+Philosopher 4 goes for left fork.
+Philosopher 5 goes for right fork.
+Philosopher 7 has left fork.
+Philosopher 6 releases right fork.
+Philosopher 7 eats for 0 milliseconds.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 1 goes for left fork.
+Philosopher 3 has right fork.
+Philosopher 2 goes for right fork.
+Philosopher 8 has left fork.
+Philosopher 7 releases right fork.
+Philosopher 5 has right fork.
+Philosopher 6 releases left fork.
+Philosopher 5 goes for left fork.
+Philosopher 7 releases left fork.
+Philosopher 8 eats for 0 milliseconds.
+Philosopher 2 has right fork.
+Philosopher 3 goes for left fork.
+Philosopher 2 goes for left fork.
+Philosopher 9 has left fork.
+Philosopher 8 releases right fork.
+Philosopher 7 thinks for 0 milliseconds.
+Philosopher 6 thinks for 0 milliseconds.
+Philosopher 7 goes for right fork.
+Philosopher 8 releases left fork.
+Philosopher 9 eats for 0 milliseconds.
+Philosopher 8 thinks for 0 milliseconds.
+Philosopher 7 has right fork.
+Philosopher 6 goes for right fork.
+Philosopher 6 has right fork.
+Philosopher 7 goes for left fork.
+Philosopher 8 goes for right fork.
+Philosopher 10 has left fork.
+Philosopher 9 releases right fork.
+Philosopher 10 eats for 0 milliseconds.
+Philosopher 6 goes for left fork.
+Philosopher 1 has left fork.
+Philosopher 10 releases right fork.
+Philosopher 10 releases left fork.
+Philosopher 8 has right fork.
+Philosopher 9 releases left fork.
+Philosopher 8 goes for left fork.
+Philosopher 10 thinks for 0 milliseconds.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 10 goes for right fork.
+Philosopher 9 thinks for 0 milliseconds.
+Philosopher 2 has left fork.
+Philosopher 1 releases right fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 9 goes for right fork.
+Philosopher 3 has left fork.
+Philosopher 2 releases right fork.
+Philosopher 10 has right fork.
+Philosopher 1 releases left fork.
+Philosopher 10 goes for left fork.
+Philosopher 2 releases left fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 9 has right fork.
+Philosopher 9 goes for left fork.
+Philosopher 4 has left fork.
+Philosopher 3 releases right fork.
+Philosopher 3 releases left fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 goes for right fork.
+Philosopher 2 has right fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 3 goes for right fork.
+Philosopher 2 goes for left fork.
+Philosopher 1 goes for right fork.
+Philosopher 2 has left fork.
+Philosopher 5 has left fork.
+Philosopher 4 releases right fork.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 6 has left fork.
+Philosopher 5 releases right fork.
+Philosopher 5 releases left fork.
+Philosopher 3 has right fork.
+Philosopher 3 goes for left fork.
+Philosopher 4 releases left fork.
+Philosopher 3 has left fork.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 6 eats for 0 milliseconds.
+Philosopher 2 releases right fork.
+Philosopher 7 has left fork.
+Philosopher 6 releases right fork.
+Philosopher 5 goes for right fork.
+Philosopher 5 has right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 4 thinks for 0 milliseconds.
+Philosopher 3 releases right fork.
+Philosopher 3 releases left fork.
+Philosopher 5 goes for left fork.
+Philosopher 6 releases left fork.
+Philosopher 7 eats for 0 milliseconds.
+Philosopher 1 has right fork.
+Philosopher 1 goes for left fork.
+Philosopher 2 releases left fork.
+Philosopher 8 has left fork.
+Philosopher 7 releases right fork.
+Philosopher 7 releases left fork.
+Philosopher 6 thinks for 0 milliseconds.
+Philosopher 5 has left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 4 goes for right fork.
+Philosopher 3 goes for right fork.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 6 goes for right fork.
+Philosopher 6 has right fork.
+Philosopher 7 thinks for 0 milliseconds.
+Philosopher 8 eats for 0 milliseconds.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 9 has left fork.
+Philosopher 8 releases right fork.
+Philosopher 7 goes for right fork.
+Philosopher 6 goes for left fork.
+Philosopher 5 releases right fork.
+Philosopher 3 has right fork.
+Philosopher 4 has right fork.
+Philosopher 4 goes for left fork.
+Philosopher 5 releases left fork.
+Philosopher 6 has left fork.
+Philosopher 7 has right fork.
+Philosopher 7 goes for left fork.
+Philosopher 8 releases left fork.
+Philosopher 9 eats for 0 milliseconds.
+Philosopher 2 goes for right fork.
+Philosopher 2 has right fork.
+Philosopher 9 releases right fork.
+Philosopher 9 releases left fork.
+Philosopher 10 has left fork.
+Philosopher 8 thinks for 0 milliseconds.
+Philosopher 6 eats for 0 milliseconds.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 3 goes for left fork.
+Philosopher 5 goes for right fork.
+Philosopher 7 has left fork.
+Philosopher 6 releases right fork.
+Philosopher 8 goes for right fork.
+Philosopher 8 has right fork.
+Philosopher 10 eats for 0 milliseconds.
+Philosopher 9 thinks for 0 milliseconds.
+Philosopher 2 goes for left fork.
+Philosopher 9 goes for right fork.
+Philosopher 1 has left fork.
+Philosopher 10 releases right fork.
+Philosopher 8 goes for left fork.
+Philosopher 6 releases left fork.
+Philosopher 5 has right fork.
+Philosopher 5 goes for left fork.
+Philosopher 7 eats for 0 milliseconds.
+Philosopher 6 thinks for 0 milliseconds.
+Philosopher 9 has right fork.
+Philosopher 10 releases left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 10 thinks for 0 milliseconds.
+Philosopher 9 goes for left fork.
+Philosopher 6 goes for right fork.
+Philosopher 8 has left fork.
+Philosopher 7 releases right fork.
+Philosopher 8 eats for 0 milliseconds.
+Philosopher 10 goes for right fork.
+Philosopher 2 has left fork.
+Philosopher 1 releases right fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 9 has left fork.
+Philosopher 8 releases right fork.
+Philosopher 6 has right fork.
+Philosopher 6 goes for left fork.
+Philosopher 7 releases left fork.
+Philosopher 8 releases left fork.
+Philosopher 9 eats for 0 milliseconds.
+Philosopher 3 has left fork.
+Philosopher 2 releases right fork.
+Philosopher 10 has right fork.
+Philosopher 10 goes for left fork.
+Philosopher 1 releases left fork.
+Philosopher 10 has left fork.
+Philosopher 2 releases left fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 9 releases right fork.
+Philosopher 8 thinks for 0 milliseconds.
+Philosopher 7 thinks for 0 milliseconds.
+Philosopher 8 goes for right fork.
+Philosopher 8 has right fork.
+Philosopher 8 goes for left fork.
+Philosopher 8 has left fork.
+Philosopher 9 releases left fork.
+Philosopher 4 has left fork.
+Philosopher 3 releases right fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 10 eats for 0 milliseconds.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 10 releases right fork.
+Philosopher 10 releases left fork.
+Philosopher 2 goes for right fork.
+Philosopher 3 releases left fork.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 4 releases right fork.
+Philosopher 9 thinks for 0 milliseconds.
+Philosopher 8 eats for 0 milliseconds.
+Philosopher 7 goes for right fork.
+Philosopher 8 releases right fork.
+Philosopher 9 goes for right fork.
+Philosopher 4 releases left fork.
+Philosopher 5 has left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 2 has right fork.
+Philosopher 2 goes for left fork.
+Philosopher 10 thinks for 0 milliseconds.
+Philosopher 1 goes for right fork.
+Philosopher 10 goes for right fork.
+Philosopher 10 has right fork.
+Philosopher 2 has left fork.
+Philosopher 3 goes for right fork.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 4 thinks for 0 milliseconds.
+Philosopher 9 has right fork.
+Philosopher 9 goes for left fork.
+Philosopher 7 has right fork.
+Philosopher 8 releases left fork.
+Philosopher 7 goes for left fork.
+Philosopher 9 has left fork.
+Philosopher 4 goes for right fork.
+Philosopher 6 has left fork.
+Philosopher 5 releases right fork.
+Philosopher 3 has right fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 10 goes for left fork.
+Philosopher 2 releases right fork.
+Philosopher 3 goes for left fork.
+Philosopher 4 has right fork.
+Philosopher 5 releases left fork.
+Philosopher 6 eats for 0 milliseconds.
+Philosopher 9 eats for 0 milliseconds.
+Philosopher 8 thinks for 0 milliseconds.
+Philosopher 10 has left fork.
+Philosopher 9 releases right fork.
+Philosopher 9 releases left fork.
+Philosopher 7 has left fork.
+Philosopher 6 releases right fork.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 4 goes for left fork.
+Philosopher 3 has left fork.
+Philosopher 2 releases left fork.
+Philosopher 1 has right fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 2 goes for right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 5 goes for right fork.
+Philosopher 6 releases left fork.
+Philosopher 7 eats for 0 milliseconds.
+Philosopher 9 thinks for 0 milliseconds.
+Philosopher 10 eats for 0 milliseconds.
+Philosopher 8 goes for right fork.
+Philosopher 10 releases right fork.
+Philosopher 9 goes for right fork.
+Philosopher 7 releases right fork.
+Philosopher 7 releases left fork.
+Philosopher 6 thinks for 0 milliseconds.
+Philosopher 5 has right fork.
+Philosopher 4 has left fork.
+Philosopher 3 releases right fork.
+Philosopher 3 releases left fork.
+Philosopher 1 goes for left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 2 has right fork.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 5 goes for left fork.
+Philosopher 5 has left fork.
+Philosopher 6 goes for right fork.
+Philosopher 7 thinks for 0 milliseconds.
+Philosopher 9 has right fork.
+Philosopher 9 goes for left fork.
+Philosopher 10 releases left fork.
+Philosopher 8 has right fork.
+Philosopher 10 thinks for 0 milliseconds.
+Philosopher 7 goes for right fork.
+Philosopher 7 has right fork.
+Philosopher 6 has right fork.
+Philosopher 6 goes for left fork.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 4 releases right fork.
+Philosopher 2 goes for left fork.
+Philosopher 3 goes for right fork.
+Philosopher 3 has right fork.
+Philosopher 1 has left fork.
+Philosopher 3 goes for left fork.
+Philosopher 4 releases left fork.
+Philosopher 6 has left fork.
+Philosopher 5 releases right fork.
+Philosopher 7 goes for left fork.
+Philosopher 10 goes for right fork.
+Philosopher 8 goes for left fork.
+Philosopher 5 releases left fork.
+Philosopher 6 eats for 0 milliseconds.
+Philosopher 4 thinks for 0 milliseconds.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 4 goes for right fork.
+Philosopher 4 has right fork.
+Philosopher 7 has left fork.
+Philosopher 6 releases right fork.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 6 releases left fork.
+Philosopher 7 eats for 0 milliseconds.
+Philosopher 4 goes for left fork.
+Philosopher 1 releases right fork.
+Philosopher 2 has left fork.
+Philosopher 10 has right fork.
+Philosopher 1 releases left fork.
+Philosopher 7 releases right fork.
+Philosopher 8 has left fork.
+Philosopher 6 thinks for 0 milliseconds.
+Philosopher 5 goes for right fork.
+Philosopher 6 goes for right fork.
+Philosopher 6 has right fork.
+Philosopher 8 eats for 0 milliseconds.
+Philosopher 7 releases left fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 10 goes for left fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 1 goes for right fork.
+Philosopher 7 thinks for 0 milliseconds.
+Philosopher 7 goes for right fork.
+Philosopher 9 has left fork.
+Philosopher 8 releases right fork.
+Philosopher 6 goes for left fork.
+Philosopher 5 has right fork.
+Philosopher 7 has right fork.
+Philosopher 8 releases left fork.
+Philosopher 9 eats for 0 milliseconds.
+Philosopher 3 has left fork.
+Philosopher 2 releases right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 10 has left fork.
+Philosopher 9 releases right fork.
+Philosopher 9 releases left fork.
+Philosopher 7 goes for left fork.
+Philosopher 5 goes for left fork.
+Philosopher 9 thinks for 0 milliseconds.
+Philosopher 10 eats for 0 milliseconds.
+Philosopher 4 has left fork.
+Philosopher 3 releases right fork.
+Philosopher 3 releases left fork.
+Philosopher 1 has right fork.
+Philosopher 2 releases left fork.
+Philosopher 1 goes for left fork.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 10 releases right fork.
+Philosopher 9 goes for right fork.
+Philosopher 10 releases left fork.
+Philosopher 5 has left fork.
+Philosopher 4 releases right fork.
+Philosopher 3 goes for right fork.
+Philosopher 3 has right fork.
+Philosopher 1 has left fork.
+Philosopher 3 goes for left fork.
+Philosopher 4 releases left fork.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 10 thinks for 0 milliseconds.
+Philosopher 9 has right fork.
+Philosopher 10 goes for right fork.
+Philosopher 6 has left fork.
+Philosopher 5 releases right fork.
+Philosopher 4 thinks for 0 milliseconds.
+Philosopher 3 has left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 4 goes for right fork.
+Philosopher 4 has right fork.
+Philosopher 5 releases left fork.
+Philosopher 6 eats for 0 milliseconds.
+Philosopher 9 goes for left fork.
+Philosopher 7 has left fork.
+Philosopher 6 releases right fork.
+Philosopher 6 releases left fork.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 4 goes for left fork.
+Philosopher 3 releases right fork.
+Philosopher 3 releases left fork.
+Philosopher 1 releases right fork.
+Philosopher 4 has left fork.
+Philosopher 5 goes for right fork.
+Philosopher 6 thinks for 0 milliseconds.
+Philosopher 7 eats for 0 milliseconds.
+Philosopher 9 has left fork.
+Philosopher 7 releases right fork.
+Philosopher 7 releases left fork.
+Philosopher 6 goes for right fork.
+Philosopher 6 has right fork.
+Philosopher 5 has right fork.
+Philosopher 5 goes for left fork.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 10 has right fork.
+Philosopher 1 releases left fork.
+Philosopher 10 goes for left fork.
+Philosopher 4 releases right fork.
+Philosopher 4 releases left fork.
+Philosopher 5 has left fork.
+Philosopher 6 goes for left fork.
+Philosopher 7 thinks for 0 milliseconds.
+Philosopher 9 eats for 0 milliseconds.
+Philosopher 7 goes for right fork.
+Philosopher 7 has right fork.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 4 thinks for 0 milliseconds.
+Philosopher 6 has left fork.
+Philosopher 5 releases right fork.
+Philosopher 7 goes for left fork.
+Philosopher 10 has left fork.
+Philosopher 9 releases right fork.
+Philosopher 10 eats for 0 milliseconds.
+Philosopher 5 releases left fork.
+Philosopher 6 eats for 0 milliseconds.
+Philosopher 4 goes for right fork.
+Philosopher 7 has left fork.
+Philosopher 6 releases right fork.
+Philosopher 10 releases right fork.
+Philosopher 9 releases left fork.
+Philosopher 10 releases left fork.
+Philosopher 6 releases left fork.
+Philosopher 7 eats for 0 milliseconds.
+Philosopher 4 has right fork.
+Philosopher 7 releases right fork.
+Philosopher 7 releases left fork.
+Philosopher 6 thinks for 0 milliseconds.
+Philosopher 4 goes for left fork.
+Philosopher 6 goes for right fork.
+Philosopher 6 has right fork.
+Philosopher 4 has left fork.
+Philosopher 6 goes for left fork.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 6 has left fork.
+Philosopher 6 eats for 0 milliseconds.
+Philosopher 4 releases right fork.
+Philosopher 6 releases right fork.
+Philosopher 4 releases left fork.
+Philosopher 6 releases left fork.
+Philosopher 4 thinks for 0 milliseconds.
+Philosopher 4 goes for right fork.
+Philosopher 4 has right fork.
+Philosopher 4 goes for left fork.
+Philosopher 4 has left fork.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 4 releases right fork.
+Philosopher 4 releases left fork.
+
+java Driver 2 10
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 2 goes for right fork.
+Philosopher 1 goes for right fork.
+Philosopher 2 has right fork.
+Philosopher 2 goes for left fork.
+Philosopher 1 has right fork.
+Philosopher 1 goes for left fork.
+//This one dead locks
+
+java Driver 5 2 1 1
+
+Philosopher 1 thinks for 1 milliseconds.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 4 thinks for 1 milliseconds.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 3 goes for right fork.
+Philosopher 3 has right fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 3 goes for left fork.
+Philosopher 4 goes for right fork.
+Philosopher 4 has right fork.
+Philosopher 4 goes for left fork.
+Philosopher 1 goes for right fork.
+Philosopher 5 goes for right fork.
+Philosopher 5 has right fork.
+Philosopher 5 goes for left fork.
+Philosopher 1 has right fork.
+Philosopher 3 has left fork.
+Philosopher 2 goes for right fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 1 goes for left fork.
+Philosopher 4 has left fork.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 4 releases right fork.
+Philosopher 3 releases right fork.
+Philosopher 4 releases left fork.
+Philosopher 4 thinks for 0 milliseconds.
+Philosopher 5 has left fork.
+Philosopher 4 goes for right fork.
+Philosopher 2 has right fork.
+Philosopher 3 releases left fork.
+Philosopher 2 goes for left fork.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 3 thinks for 0 milliseconds.
+Philosopher 1 has left fork.
+Philosopher 5 releases right fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 3 goes for right fork.
+Philosopher 2 has left fork.
+Philosopher 1 releases right fork.
+Philosopher 4 has right fork.
+Philosopher 5 releases left fork.
+Philosopher 4 goes for left fork.
+Philosopher 1 releases left fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 3 has right fork.
+Philosopher 2 releases right fork.
+Philosopher 2 releases left fork.
+Philosopher 1 thinks for 0 milliseconds.
+Philosopher 5 thinks for 0 milliseconds.
+Philosopher 1 goes for right fork.
+Philosopher 2 thinks for 0 milliseconds.
+Philosopher 3 goes for left fork.
+Philosopher 2 goes for right fork.
+Philosopher 1 has right fork.
+Philosopher 5 goes for right fork.
+Philosopher 5 has right fork.
+Philosopher 5 goes for left fork.
+Philosopher 1 goes for left fork.
+Philosopher 3 has left fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 3 releases right fork.
+Philosopher 3 releases left fork.
+Philosopher 4 has left fork.
+Philosopher 2 has right fork.
+Philosopher 2 goes for left fork.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 4 releases right fork.
+Philosopher 5 has left fork.
+Philosopher 5 eats for 0 milliseconds.
+Philosopher 4 releases left fork.
+Philosopher 1 has left fork.
+Philosopher 5 releases right fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 5 releases left fork.
+Philosopher 2 has left fork.
+Philosopher 1 releases right fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 1 releases left fork.
+Philosopher 2 releases right fork.
+Philosopher 2 releases left fork.
+
+java Driver 4 2 3 1
+
+Philosopher 2 thinks for 3 milliseconds.
+Philosopher 4 thinks for 3 milliseconds.
+Philosopher 1 thinks for 3 milliseconds.
+Philosopher 3 thinks for 3 milliseconds.
+Philosopher 2 goes for right fork.
+Philosopher 2 has right fork.
+Philosopher 4 goes for right fork.
+Philosopher 4 has right fork.
+Philosopher 4 goes for left fork.
+Philosopher 4 has left fork.
+Philosopher 1 goes for right fork.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 3 goes for right fork.
+Philosopher 2 goes for left fork.
+Philosopher 4 releases right fork.
+Philosopher 1 has right fork.
+Philosopher 3 has right fork.
+Philosopher 4 releases left fork.
+Philosopher 3 goes for left fork.
+Philosopher 1 goes for left fork.
+Philosopher 4 thinks for 1 milliseconds.
+Philosopher 1 has left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 1 releases right fork.
+Philosopher 2 has left fork.
+Philosopher 4 goes for right fork.
+Philosopher 1 releases left fork.
+Philosopher 4 has right fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 4 goes for left fork.
+Philosopher 1 thinks for 2 milliseconds.
+Philosopher 3 has left fork.
+Philosopher 2 releases right fork.
+Philosopher 2 releases left fork.
+Philosopher 2 thinks for 2 milliseconds.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 3 releases right fork.
+Philosopher 4 has left fork.
+Philosopher 4 eats for 0 milliseconds.
+Philosopher 4 releases right fork.
+Philosopher 4 releases left fork.
+Philosopher 2 goes for right fork.
+Philosopher 1 goes for right fork.
+Philosopher 2 has right fork.
+Philosopher 3 releases left fork.
+Philosopher 2 goes for left fork.
+Philosopher 1 has right fork.
+Philosopher 3 thinks for 1 milliseconds.
+Philosopher 1 goes for left fork.
+Philosopher 1 has left fork.
+Philosopher 1 eats for 0 milliseconds.
+Philosopher 1 releases right fork.
+Philosopher 2 has left fork.
+Philosopher 3 goes for right fork.
+Philosopher 1 releases left fork.
+Philosopher 3 has right fork.
+Philosopher 2 eats for 0 milliseconds.
+Philosopher 3 goes for left fork.
+Philosopher 2 releases right fork.
+Philosopher 3 has left fork.
+Philosopher 2 releases left fork.
+Philosopher 3 eats for 0 milliseconds.
+Philosopher 3 releases right fork.
+Philosopher 3 releases left fork.
