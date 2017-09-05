@@ -1,0 +1,57 @@
+Aquiring write lock for put
+Aquiring write lock for put
+Aquiring write lock for put
+Got old value
+Got old value
+Got old value
+The size of bucket is 3
+Aquiring write lock for put
+Got old value
+Aquiring write lock for remove
+Removed key
+The size of bucket is 3
+The size of bucket is 3
+Aquiring write lock for put
+Got old value
+Aquiring write lock for put
+Got old value
+Aquiring write lock for remove
+Removed key
+The size of bucket is 4
+Aquiring write lock for put
+Got old value
+The size of bucket is 5
+Aquiring write lock for remove
+Removed key
+The size of bucket is 4
+Aquiring write lock for put
+Got old value
+Aquiring write lock for put
+Got old value
+The size of bucket is 6
+Aquiring write lock for put
+Got old value
+Aquiring write lock for remove
+Removed key
+The size of bucket is 6
+Aquiring write lock for remove
+Removed key
+The size of bucket is 5
+Aquiring write lock for put
+Got old value
+Aquiring write lock for remove
+Removed key
+Aquiring write lock for put
+Got old value
+Aquiring write lock for put
+Got old value
+Aquiring write lock for remove
+Removed key
+The size of bucket is 6
+Aquiring write lock for put
+Got old value
+The size of bucket is 7
+The size of bucket is 7
+Aquiring write lock for put
+Got old value
+The size of bucket is 8
